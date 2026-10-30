@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TaskFlow - a task planning mobile app with Kanban boards and AI analytics. Manage tasks without burnout.">
+  <title>TaskFlow - Manage Tasks Without Burnout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <input type="checkbox" id="theme-toggle" class="visually-hidden" aria-label="Dark theme">
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="TaskFlow home">
+      <img src="images/logo.svg" alt="" width="40" height="40">
+      <strong>TaskFlow</strong>
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="visually-hidden" aria-label="Toggle menu">
+    <label for="menu-toggle" class="burger" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#tariffs">Tariffs</a></li>
+        <li><a href="#integrations">Integrations</a></li>
+      </ul>
+    </nav>
+
+    <a class="btn btn-contrast" href="#beta">Download</a>
+  </header>
+
+  <main id="top">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <article class="hero-text">
+        <p class="eyebrow">Task planner for teams and freelancers</p>
+        <h1 id="hero-title">Manage Tasks <span>Without Burnout</span></h1>
+        <p class="lead">Plan your day on a Kanban board, let AI analytics balance your workload and finish the week with energy to spare.</p>
+        <a class="btn btn-primary btn-large" href="#beta">Join the closed beta</a>
+        <ul class="stores" aria-label="Download the app">
+          <li><a class="store" href="#beta"><small>Download on the</small><strong>App Store</strong></a></li>
+          <li><a class="store" href="#beta"><small>Get it on</small><strong>Google Play</strong></a></li>
+        </ul>
+      </article>
+
+      <figure class="hero-media">
+        <img src="images/phone-mockup.svg" alt="TaskFlow app interface on a smartphone showing a Kanban board" width="300" height="600">
+      </figure>
+    </section>
+
+    <section id="features" class="section" aria-labelledby="features-title">
+      <header class="section-head">
+        <h2 id="features-title">Built for focus</h2>
+        <p>Everything you need to plan, track and review your work in one place.</p>
+      </header>
+      <ul class="card-grid">
+        <li><article class="card">
+          <h3>Kanban boards</h3>
+          <p>Drag tasks between To do, In progress and Done. Custom columns and swimlanes included.</p>
+        </article></li>
+        <li><article class="card">
+          <h3>AI analytics</h3>
+          <p>Weekly insights show overloaded days and suggest a healthier schedule.</p>
+        </article></li>
+        <li><article class="card">
+          <h3>Smart reminders</h3>
+          <p>Notifications arrive when you can act on them, not in the middle of deep work.</p>
+        </article></li>
+        <li><article class="card">
+          <h3>Team sync</h3>
+          <p>Share boards, assign owners and see changes in real time on every device.</p>
+        </article></li>
+        <li><article class="card">
+          <h3>Offline mode</h3>
+          <p>Keep working without a connection. Everything syncs when you are back online.</p>
+        </article></li>
+        <li><article class="card">
+          <h3>Burnout meter</h3>
+          <p>A simple daily score tells you when to slow down and when to push.</p>
+        </article></li>
+      </ul>
+    </section>
+
+    <section id="tariffs" class="section section-alt" aria-labelledby="tariffs-title">
+      <header class="section-head">
+        <h2 id="tariffs-title">Simple tariffs</h2>
+        <p>Start free. Upgrade when your team grows.</p>
+      </header>
+      <ul class="card-grid card-grid-3">
+        <li><article class="card">
+          <h3>Free</h3>
+          <p class="price">$0</p>
+          <p>3 boards, basic reminders, 1 user.</p>
+        </article></li>
+        <li><article class="card card-featured">
+          <h3>Pro</h3>
+          <p class="price">$6<small>/month</small></p>
+          <p>Unlimited boards, AI analytics, offline mode.</p>
+        </article></li>
+        <li><article class="card">
+          <h3>Team</h3>
+          <p class="price">$12<small>/user</small></p>
+          <p>Shared workspaces, roles and priority support.</p>
+        </article></li>
+      </ul>
+    </section>
+
+    <section id="integrations" class="section" aria-labelledby="integrations-title">
+      <header class="section-head">
+        <h2 id="integrations-title">Integrations</h2>
+        <p>Connect TaskFlow with the tools you already use.</p>
+      </header>
+      <ul class="chips">
+        <li>Google Calendar</li>
+        <li>Slack</li>
+        <li>GitHub</li>
+        <li>Notion</li>
+        <li>Zapier</li>
+        <li>REST API</li>
+      </ul>
+    </section>
+
+    <section id="beta" class="section section-alt" aria-labelledby="beta-title">
+      <header class="section-head">
+        <h2 id="beta-title">Join the closed beta</h2>
+        <p>Leave your email and get early access to the app.</p>
+      </header>
+
+      <form class="beta-form" action="#" method="post">
+        <fieldset>
+          <legend class="visually-hidden">Closed beta subscription</legend>
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="email" required>
+          <small class="msg msg-error">Please enter a valid email address.</small>
+          <small class="msg msg-ok">Looks good!</small>
+
+          <label for="phone">Phone (optional)</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 700 000 00 00" autocomplete="tel" pattern="[+0-9 ()\-]{7,20}">
+          <small class="msg msg-error">Use digits, spaces, + or - only.</small>
+
+          <label class="check" for="terms">
+            <input type="checkbox" id="terms" name="terms" required>
+            <span>I accept the terms and privacy policy</span>
+          </label>
+
+          <button type="submit" class="btn btn-primary btn-large">Subscribe</button>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer navigation">
+      <ul>
+        <li><a href="#top">API documentation</a></li>
+        <li><a href="#top">Twitter / X</a></li>
+        <li><a href="#top">Instagram</a></li>
+        <li><a href="#top">Telegram</a></li>
+      </ul>
+    </nav>
+
+    <p class="legal">&copy; 2026 TaskFlow. All rights reserved. Educational project for ICT6001, International University. This is a demo and not a real product.</p>
+
+    <label class="theme-switch" for="theme-toggle">
+      <span class="switch-text">Dark theme</span>
+      <span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span>
+    </label>
+  </footer>
+
+</body>
+</html>
